@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SerilizationApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+51fdd681d0493792ec6ef64816b1a56c512d2293")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+166a2840fe966f3ca88afb7bd1db4d6b428b4ba1")]
 [assembly: System.Reflection.AssemblyProductAttribute("SerilizationApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SerilizationApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
