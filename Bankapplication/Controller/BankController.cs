@@ -7,7 +7,7 @@ namespace BankApplication.Controllers
     [Route("api/[controller]")]
     public class BankController : ControllerBase
     {
-        private readonly IBankService _bankService;
+                private readonly IBankService _bankService;
 
         public BankController(IBankService bankService)
         {
