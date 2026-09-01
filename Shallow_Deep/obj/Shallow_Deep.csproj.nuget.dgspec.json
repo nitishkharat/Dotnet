@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "S:\\OOPS DOTNET\\oopsconcepts\\SHALLOW DEEP\\Shallow_Deep\\Shallow_Deep.csproj": {}
+    "C:\\GitHub\\Dotnet\\Shallow_Deep\\Shallow_Deep.csproj": {}
   },
   "projects": {
-    "S:\\OOPS DOTNET\\oopsconcepts\\SHALLOW DEEP\\Shallow_Deep\\Shallow_Deep.csproj": {
+    "C:\\GitHub\\Dotnet\\Shallow_Deep\\Shallow_Deep.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "S:\\OOPS DOTNET\\oopsconcepts\\SHALLOW DEEP\\Shallow_Deep\\Shallow_Deep.csproj",
+        "projectUniqueName": "C:\\GitHub\\Dotnet\\Shallow_Deep\\Shallow_Deep.csproj",
         "projectName": "Shallow_Deep",
-        "projectPath": "S:\\OOPS DOTNET\\oopsconcepts\\SHALLOW DEEP\\Shallow_Deep\\Shallow_Deep.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "S:\\OOPS DOTNET\\oopsconcepts\\SHALLOW DEEP\\Shallow_Deep\\obj\\",
+        "projectPath": "C:\\GitHub\\Dotnet\\Shallow_Deep\\Shallow_Deep.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\GitHub\\Dotnet\\Shallow_Deep\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -39,7 +39,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.300"
+        "SdkAnalysisLevel": "10.0.400"
       },
       "frameworks": {
         "net10.0": {
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

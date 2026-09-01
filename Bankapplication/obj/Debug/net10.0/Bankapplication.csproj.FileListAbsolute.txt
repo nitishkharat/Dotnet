@@ -1,0 +1,14 @@
+C:\Bankapplication\bin\Debug\net10.0\Bankapplication.exe
+C:\Bankapplication\bin\Debug\net10.0\Bankapplication.deps.json
+C:\Bankapplication\bin\Debug\net10.0\Bankapplication.runtimeconfig.json
+C:\Bankapplication\bin\Debug\net10.0\Bankapplication.dll
+C:\Bankapplication\bin\Debug\net10.0\Bankapplication.pdb
+C:\Bankapplication\obj\Debug\net10.0\Bankapplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bankapplication\obj\Debug\net10.0\Bankapplication.AssemblyInfoInputs.cache
+C:\Bankapplication\obj\Debug\net10.0\Bankapplication.AssemblyInfo.cs
+C:\Bankapplication\obj\Debug\net10.0\Bankapplication.csproj.CoreCompileInputs.cache
+C:\Bankapplication\obj\Debug\net10.0\Bankapplication.dll
+C:\Bankapplication\obj\Debug\net10.0\refint\Bankapplication.dll
+C:\Bankapplication\obj\Debug\net10.0\Bankapplication.pdb
+C:\Bankapplication\obj\Debug\net10.0\Bankapplication.genruntimeconfig.cache
+C:\Bankapplication\obj\Debug\net10.0\ref\Bankapplication.dll

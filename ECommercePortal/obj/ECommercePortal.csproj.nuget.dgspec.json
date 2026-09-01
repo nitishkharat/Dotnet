@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "S:\\ECommercePortal\\ECommercePortal\\ECommercePortal.csproj": {}
+    "C:\\GitHub\\Dotnet\\ECommercePortal\\ECommercePortal.csproj": {}
   },
   "projects": {
-    "S:\\ECommercePortal\\ECommercePortal\\ECommercePortal.csproj": {
+    "C:\\GitHub\\Dotnet\\ECommercePortal\\ECommercePortal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "S:\\ECommercePortal\\ECommercePortal\\ECommercePortal.csproj",
+        "projectUniqueName": "C:\\GitHub\\Dotnet\\ECommercePortal\\ECommercePortal.csproj",
         "projectName": "ECommercePortal",
-        "projectPath": "S:\\ECommercePortal\\ECommercePortal\\ECommercePortal.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "S:\\ECommercePortal\\ECommercePortal\\obj\\",
+        "projectPath": "C:\\GitHub\\Dotnet\\ECommercePortal\\ECommercePortal.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\GitHub\\Dotnet\\ECommercePortal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -39,7 +39,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.300"
+        "SdkAnalysisLevel": "10.0.400"
       },
       "frameworks": {
         "net10.0": {
@@ -64,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
