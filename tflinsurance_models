@@ -1,0 +1,376 @@
+namespace TFLInsurance.Models
+{
+    public class Agent
+    {
+        public long AgentId { get; set; }
+
+        public long UserId { get; set; }
+
+        public string AgentCode { get; set; }
+
+        public string LicenseNumber { get; set; }
+
+        public DateTime? JoiningDate { get; set; }
+
+        public string Status { get; set; } = "Active";
+
+        public DateTime CreatedAt { get; set; }
+    }
+}
+
+
+<!-- audit_logs -->
+
+namespace TFLInsurance.Models
+{
+    public class AuditLog
+    {
+        public long AuditLogId { get; set; }
+
+        public long? UserId { get; set; }
+
+        public string EntityName { get; set; }
+
+        public long EntityId { get; set; }
+
+        public string Action { get; set; }
+
+        public string? OldValue { get; set; }
+
+        public string? NewValue { get; set; }
+
+        public string? IpAddress { get; set; }
+
+        public DateTime CreatedAt { get; set; }
+    }
+}
+
+
+<!-- claims -->
+
+namespace TFLInsurance.Models
+{
+    public class Claim
+    {
+        public long ClaimId { get; set; }
+
+        public string ClaimNumber { get; set; }
+
+        public long PolicyId { get; set; }
+
+        public long ClaimantId { get; set; }
+
+        public string ClaimType { get; set; }
+
+        public decimal? ClaimAmount { get; set; }
+
+        public string Status { get; set; } = "Registered";
+
+        public DateTime RaisedAt { get; set; }
+
+        public DateTime? ApprovedAt { get; set; }
+
+        public DateTime? RejectedAt { get; set; }
+
+        public DateTime? SettledAt { get; set; }
+    }
+}
+
+
+<!-- cutomers -->
+
+namespace TFLInsurance.Models
+{
+    public class Customers
+    {
+        public long CustomerId { get; set; }
+
+        public long UserId { get; set; }
+
+        public string CustomerNumber { get; set; }
+
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
+        public DateTime DateOfBirth { get; set; }
+
+        public string? Gender { get; set; }
+
+        public string? Phone { get; set; }
+
+        public string? Email { get; set; }
+
+        public string? AddressLine1 { get; set; }
+
+        public string? AddressLine2 { get; set; }
+
+        public string? City { get; set; }
+
+        public string? State { get; set; }
+
+        public string? PostalCode { get; set; }
+
+        public string Status { get; set; } = "Active";
+
+        public DateTime CreatedAt { get; set; }
+
+        public DateTime? UpdatedAt { get; set; }
+    }
+}
+
+
+<!-- payments -->
+
+namespace TFLInsurance.Models
+{
+    public class Payments
+    {
+        public long PaymentId { get; set; }
+
+        public long PremiumId { get; set; }
+
+        public long PolicyId { get; set; }
+
+        public string TransactionReference { get; set; }
+
+        public string? IdempotencyKey { get; set; }
+
+        public decimal Amount { get; set; }
+
+        public string? PaymentMethod { get; set; }
+
+        public DateTime? PaymentDate { get; set; }
+
+        public string Status { get; set; } = "Initiated";
+
+        public string? GatewayResponse { get; set; }
+
+        public DateTime CreatedAt { get; set; }
+    }
+}
+
+<!-- policy -->
+
+
+namespace TFLInsurance.Models
+{
+    public class Policy
+    {
+        public long PolicyId { get; set; }
+
+        public string PolicyNumber { get; set; }
+
+        public long ProposalId { get; set; }
+
+        public long CustomerId { get; set; }
+
+        public long ProductId { get; set; }
+
+        public long? AgentId { get; set; }
+
+        public decimal SumAssured { get; set; }
+
+        public decimal PremiumAmount { get; set; }
+
+        public string PremiumFrequency { get; set; }
+
+        public DateTime StartDate { get; set; }
+
+        public DateTime MaturityDate { get; set; }
+
+        public string Status { get; set; } = "Issued";
+
+        public DateTime IssuedAt { get; set; }
+
+        public DateTime CreatedAt { get; set; }
+
+        public DateTime? UpdatedAt { get; set; }
+    }
+}
+
+<!-- payments -->
+
+namespace TFLInsurance.Models
+{
+    public class Premium
+    {
+        public long PremiumId { get; set; }
+
+        public long PolicyId { get; set; }
+
+        public int InstallmentNumber { get; set; }
+
+        public DateTime DueDate { get; set; }
+
+        public decimal Amount { get; set; }
+
+        public decimal PaidAmount { get; set; } = 0.00m;
+
+        public DateTime? PaidDate { get; set; }
+
+        public decimal LateFee { get; set; } = 0.00m;
+
+        public string Status { get; set; } = "Due";
+    }
+}
+<!-- 
+proposal_documents -->
+
+namespace TFLInsurance.Models
+{
+    public class ProposalDocument
+    {
+        public long ProposalDocumentId { get; set; }
+
+        public long ProposalId { get; set; }
+
+        public string DocumentType { get; set; }
+
+        public string FileName { get; set; }
+
+        public string FileUrl { get; set; }
+
+        public string VerificationStatus { get; set; } = "Pending";
+
+        public DateTime UploadedAt { get; set; }
+
+        public DateTime? VerifiedAt { get; set; }
+    }
+}
+
+
+<!-- proppsal -->
+
+namespace TFLInsurance.Models
+{
+    public class Proposal
+    {
+        public long ProposalId { get; set; }
+
+        public string ProposalNumber { get; set; }
+
+        public long CustomerId { get; set; }
+
+        public long? AgentId { get; set; }
+
+        public long ProductId { get; set; }
+
+        public decimal SumAssured { get; set; }
+
+        public int PolicyTerm { get; set; }
+
+        public decimal PremiumAmount { get; set; }
+
+        public string PremiumFrequency { get; set; }
+
+        public string Status { get; set; } = "Draft";
+
+        public DateTime CreatedAt { get; set; }
+
+        public DateTime? SubmittedAt { get; set; }
+
+        public DateTime? ApprovedAt { get; set; }
+
+        public DateTime? RejectedAt { get; set; }
+    }
+}
+
+
+<!-- roles -->
+
+namespace TFLInsurance.Models
+{
+    public class Role
+    {
+        public int RoleId { get; set; }
+
+        public string RoleName { get; set; }
+    }
+}
+
+<!-- user_roles -->
+
+namespace TFLInsurance.Models
+{
+    public class UserRole
+    {
+        public long UserId { get; set; }
+
+        public int RoleId { get; set; }
+    }
+}
+
+<!-- users -->
+
+namespace TFLInsurance.Models
+{
+    public class User
+    {
+        public long UserId { get; set; }
+
+        public string Username { get; set; }
+
+        public string Email { get; set; }
+
+        public string PasswordHash { get; set; }
+
+        public string Status { get; set; } = "Active";
+
+        public DateTime CreatedAt { get; set; }
+
+        public DateTime? UpdatedAt { get; set; }
+    }
+}
+
+ <!-- notifications -->
+
+ namespace TFLInsurance.Models
+{
+    public class Notification
+    {
+        public long NotificationId { get; set; }
+
+        public long UserId { get; set; }
+
+        public string NotificationType { get; set; }
+
+        public string? Subject { get; set; }
+
+        public string Message { get; set; }
+
+        public string Channel { get; set; }
+
+        public string Status { get; set; } = "Pending";
+
+        public DateTime CreatedAt { get; set; }
+
+        public DateTime? SentAt { get; set; }
+    }
+}
+
+
+
+<!-- claim_documents -->
+
+namespace TFLInsurance.Models
+{
+    public class ClaimDocument
+    {
+        public long ClaimDocumentId { get; set; }
+
+        public long ClaimId { get; set; }
+
+        public string DocumentType { get; set; }
+
+        public string FileName { get; set; }
+
+        public string FileUrl { get; set; }
+
+        public string VerificationStatus { get; set; } = "Pending";
+
+        public DateTime UploadedAt { get; set; }
+
+        public DateTime? VerifiedAt { get; set; }
+    }
+}

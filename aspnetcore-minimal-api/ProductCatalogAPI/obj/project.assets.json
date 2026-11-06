@@ -83,19 +83,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/salonishivajipawale/.nuget/packages/": {}
+    "C:\\Users\\HP\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/salonishivajipawale/Desktop/DotNet/aspnetcore-minimal-api/ProductCatalogAPI/ProductCatalogAPI.csproj",
+      "projectUniqueName": "N:\\Dotnet\\aspnetcore-minimal-api\\ProductCatalogAPI\\ProductCatalogAPI.csproj",
       "projectName": "ProductCatalogAPI",
-      "projectPath": "/Users/salonishivajipawale/Desktop/DotNet/aspnetcore-minimal-api/ProductCatalogAPI/ProductCatalogAPI.csproj",
-      "packagesPath": "/Users/salonishivajipawale/.nuget/packages/",
-      "outputPath": "/Users/salonishivajipawale/Desktop/DotNet/aspnetcore-minimal-api/ProductCatalogAPI/obj/",
+      "projectPath": "N:\\Dotnet\\aspnetcore-minimal-api\\ProductCatalogAPI\\ProductCatalogAPI.csproj",
+      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+      "outputPath": "N:\\Dotnet\\aspnetcore-minimal-api\\ProductCatalogAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/salonishivajipawale/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -120,7 +120,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.300"
+      "SdkAnalysisLevel": "10.0.400"
     },
     "frameworks": {
       "net10.0": {
@@ -151,7 +151,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.300/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
