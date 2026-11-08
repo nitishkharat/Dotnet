@@ -1,0 +1,28 @@
+
+namespace TFLInsurance.Models
+{
+    public class Insurance_products
+    {
+        public long ProductId { get; set; }
+
+        public string ProductCode { get; set; }
+
+        public string ProductName { get; set; }
+
+        public string? Description { get; set; }
+
+        public int? MinimumAge { get; set; }
+
+        public int? MaximumAge { get; set; }
+
+        public int? MinimumTerm { get; set; }
+
+        public int? MaximumTerm { get; set; }
+
+        public string Status { get; set; } = "Active";
+
+        public DateTime CreatedAt { get; set; }
+
+        public DateTime? UpdatedAt { get; set; }
+    }
+}

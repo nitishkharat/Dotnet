@@ -1,0 +1,6 @@
+@TFLInsurance_HostAddress = http://localhost:5226
+
+GET {{TFLInsurance_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
