@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TFLInsurance")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+877a9660b8e0f0647a9c43cdc5b21c3603b6c11b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd0174d60dc0c298c77f9fee09d16dbe81e68002")]
 [assembly: System.Reflection.AssemblyProductAttribute("TFLInsurance")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TFLInsurance")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

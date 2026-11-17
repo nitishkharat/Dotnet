@@ -33,9 +33,11 @@ builder.Services.AddControllers();
 
 // Register Repository
 builder.Services.AddScoped<IAgentsRepository, AgentsRepository>();
-
 // Register Service
 builder.Services.AddScoped<IAgentsService, AgentsService>();
+
+builder.Services.AddScoped<IPolicyRepository, PolicyRepository>();
+builder.Services.AddScoped<IPolicyService, PolicyService>();
 
 var app = builder.Build();
 

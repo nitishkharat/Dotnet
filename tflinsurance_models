@@ -19,7 +19,7 @@ namespace TFLInsurance.Models
 }
 
 
-<!-- audit_logs -->
+// <!-- audit_logs -->
 
 namespace TFLInsurance.Models
 {
@@ -46,7 +46,7 @@ namespace TFLInsurance.Models
 }
 
 
-<!-- claims -->
+// <!-- claims -->
 
 namespace TFLInsurance.Models
 {
@@ -189,7 +189,7 @@ namespace TFLInsurance.Models
     }
 }
 
-<!-- payments -->
+// premium
 
 namespace TFLInsurance.Models
 {
@@ -214,8 +214,8 @@ namespace TFLInsurance.Models
         public string Status { get; set; } = "Due";
     }
 }
-<!-- 
-proposal_documents -->
+// <!-- 
+// proposal_documents -->
 
 namespace TFLInsurance.Models
 {
@@ -372,5 +372,87 @@ namespace TFLInsurance.Models
         public DateTime UploadedAt { get; set; }
 
         public DateTime? VerifiedAt { get; set; }
+    }
+}
+
+// claim_settlements
+namespace TFLInsurance.Models
+{
+    public class ClaimSettlement
+    {
+        public long SettlementId { get; set; }
+
+        public long ClaimId { get; set; }
+
+        public decimal ApprovedAmount { get; set; }
+
+        public decimal SettlementAmount { get; set; }
+
+        public string? PaymentReference { get; set; }
+
+        public DateTime? SettlementDate { get; set; }
+
+        public string Status { get; set; } = "Pending";
+
+        public long? ProcessedBy { get; set; }
+    }
+}
+
+
+//  insurance_product
+
+namespace TFLInsurance.Models
+{
+    public class InsuranceProduct
+    {
+        public long ProductId { get; set; }
+
+        public string ProductCode { get; set; }
+
+        public string ProductName { get; set; }
+
+        public string? Description { get; set; }
+
+        public int? MinimumAge { get; set; }
+
+        public int? MaximumAge { get; set; }
+
+        public int? MinimumTerm { get; set; }
+
+        public int? MaximumTerm { get; set; }
+
+        public string Status { get; set; } = "Active";
+
+        public DateTime CreatedAt { get; set; }
+
+        public DateTime? UpdatedAt { get; set; }
+    }
+}
+
+
+
+// policy_nominess
+
+namespace TFLInsurance.Models
+{
+    public class PolicyNominee
+    {
+        public long PolicyNomineeId { get; set; }
+
+        public long PolicyId { get; set; }
+
+        public string Name { get; set; }
+
+        public string? Relationship { get; set; }
+
+        public DateTime? DateOfBirth { get; set; }
+
+        public decimal? PercentageShare { get; set; }
+
+        public string? Phone { get; set; }
+
+        public string? Address { get; set; }
+
+        public string Status { get; set; } = "Active";
     }
 }
